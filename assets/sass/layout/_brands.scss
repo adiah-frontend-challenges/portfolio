@@ -1,0 +1,32 @@
+@use "../abstracts/" as abs;
+
+.brands {
+  margin-top: abs.rem(70);
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr;
+  //   justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: abs.rem(22);
+  row-gap: abs.rem(24);
+
+  @include abs.breakpoint(medium) {
+    column-gap: abs.rem(95);
+  }
+
+  @include abs.breakpoint(large) {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  &__logo {
+    height: abs.rem(24);
+    flex-basis: 40%;
+
+    @include abs.breakpoint(medium) {
+      flex-basis: auto;
+    }
+  }
+}
