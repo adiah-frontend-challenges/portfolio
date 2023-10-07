@@ -1,0 +1,7 @@
+@use "../abstracts/" as abs;
+
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: abs.rem(1300);
+}

@@ -17,6 +17,44 @@
     />
     <title>Developer Portfolio</title>
     <link rel="stylesheet" href="./dist/style.css" />
+    <script src="./assets/js/navigation.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <header id="main-header" data-overlay="false" class="container">
+      <div class="navbar__logo">Johnathan Specter</div>
+
+      <!-- Toggle menu button -->
+      <button
+        id="nav-toggle"
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="navbar">
+        <ul id="primary-navigation" class="navbar__nav" data-visible="false">
+          <li class="navbar__item">
+            <a class="navbar__link navbar__link--active" href="#">Articles</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">Chats</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">Awards</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">About</a>
+          </li>
+          <li id="cta-mobile" class="navbar__item navbar__item--cta">
+            <a class="navbar__link navbar__link--cta" href="#">Get in touch</a>
+          </li>
+        </ul>
+        <a id="cta-desktop" class="navbar__link navbar__link--cta" href="#"
+          >Get in touch</a
+        >
+      </nav>
+    </header>
+  </body>
 </html>
