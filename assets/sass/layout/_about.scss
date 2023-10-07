@@ -20,7 +20,9 @@
     }
 
     div {
-      width: 46%;
+      @include abs.breakpoint(large) {
+        width: 46%;
+      }
     }
 
     h3 {

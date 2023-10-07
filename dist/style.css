@@ -372,8 +372,10 @@ header {
     justify-content: space-between;
   }
 }
-.about__text div {
-  width: 46%;
+@media (min-width: 56.25em) {
+  .about__text div {
+    width: 46%;
+  }
 }
 .about__text h3 {
   color: var(--clr-white);
