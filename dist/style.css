@@ -387,6 +387,27 @@ header {
   margin-bottom: 1.625rem;
 }
 
+.cta {
+  padding-block: 5rem;
+}
+.cta h4 {
+  font-family: var(--ff-serif);
+  font-size: 2.25rem;
+  color: var(--clr-white);
+}
+.cta p {
+  margin-top: 0.5rem;
+}
+@media (min-width: 43.75em) {
+  .cta p {
+    max-width: 34rem;
+  }
+}
+.cta a {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

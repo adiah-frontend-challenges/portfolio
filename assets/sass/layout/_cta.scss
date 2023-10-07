@@ -1,0 +1,22 @@
+@use "../abstracts/" as abs;
+
+.cta {
+  padding-block: 5rem;
+  h4 {
+    font-family: var(--ff-serif);
+    font-size: 2.25rem;
+    color: var(--clr-white);
+  }
+
+  p {
+    margin-top: 0.5rem;
+    @include abs.breakpoint(medium) {
+      max-width: 34rem;
+    }
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 2rem;
+  }
+}
