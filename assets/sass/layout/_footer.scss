@@ -1,0 +1,24 @@
+@use "../abstracts/" as abs;
+
+footer {
+  background-color: var(--clr-medium);
+  padding-block: 1.5rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    font-family: var(--ff-serif);
+    font-size: 1.125;
+    flex-grow: 0;
+    color: var(--clr-white);
+  }
+
+  &__icons {
+    display: flex;
+    gap: 1rem;
+  }
+}
