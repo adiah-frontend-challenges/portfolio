@@ -25,7 +25,7 @@ header {
     top: abs.rem(40);
     z-index: 2000;
     background: transparent;
-    background-image: url(../assets/menu.svg);
+    background-image: url(../assets/img/menu.svg);
     background-repeat: no-repeat;
     background-position: center center;
     width: abs.rem(24);
@@ -34,7 +34,7 @@ header {
     // order: 3;
 
     &[aria-expanded="true"] {
-      background-image: url(../assets/close.svg);
+      background-image: url(../assets/img/close.svg);
     }
 
     &:focus-visible {
