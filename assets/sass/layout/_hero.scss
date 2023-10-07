@@ -1,0 +1,29 @@
+@use "../abstracts/" as abs;
+
+.hero {
+  margin-top: abs.rem(80);
+  &__title {
+    // max-width: abs.rem(400);
+    font-family: var(--ff-serif);
+    font-size: abs.rem(36);
+    color: var(--clr-white);
+    line-height: 1.5;
+
+    @include abs.breakpoint(medium) {
+      font-size: abs.rem(56);
+    }
+
+    @include abs.breakpoint(large) {
+      max-width: abs.rem(700);
+    }
+  }
+
+  &__text {
+    margin-top: abs.rem(5);
+    font-size: abs.rem(18);
+
+    @include abs.breakpoint(large) {
+      max-width: abs.rem(650);
+    }
+  }
+}
