@@ -351,6 +351,40 @@ header {
   }
 }
 
+.about {
+  margin-top: 0.8rem;
+  padding-block: 4rem;
+  background-color: var(--clr-medium);
+}
+@media (min-width: 56.25em) {
+  .about {
+    margin-top: 5rem;
+  }
+}
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 3.1875rem;
+}
+@media (min-width: 56.25em) {
+  .about__text {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.about__text div {
+  width: 46%;
+}
+.about__text h3 {
+  color: var(--clr-white);
+  font-family: var(--ff-serif);
+  font-size: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+.about__text p:not(:last-child) {
+  margin-bottom: 1.625rem;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

@@ -1,0 +1,39 @@
+@use "../abstracts/" as abs;
+
+.about {
+  margin-top: 0.8rem;
+  padding-block: abs.rem(64);
+  background-color: var(--clr-medium);
+
+  @include abs.breakpoint(large) {
+    margin-top: 5rem;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: abs.rem(51);
+
+    @include abs.breakpoint(large) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    div {
+      width: 46%;
+    }
+
+    h3 {
+      color: var(--clr-white);
+      font-family: var(--ff-serif);
+      font-size: abs.rem(36);
+      margin-bottom: abs.rem(12);
+    }
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: abs.rem(26);
+      }
+    }
+  }
+}
